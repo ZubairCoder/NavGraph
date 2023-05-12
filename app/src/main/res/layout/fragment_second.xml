@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEB3B"
+    tools:context=".SecondFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.9">
+
+
+        <ImageView
+            android:id="@+id/imagProfile"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/UserName"
+            app:layout_constraintHeight_percent="0.7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.2"
+            app:srcCompat="@android:drawable/ic_menu_myplaces"
+            android:contentDescription="@string/account_setting"
+            android:clickable="true"
+            android:focusable="true"
+            />
+        <TextView
+            android:id="@+id/UserName"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/your_name"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtEmail"
+            app:layout_constraintHeight_percent="0.28"
+            app:layout_constraintStart_toEndOf="@+id/imagProfile"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.4" />
+
+        <TextView
+            android:id="@+id/txtEmail"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="30dp"
+            android:text="@string/email_hint"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.26"
+            app:layout_constraintStart_toEndOf="@+id/imagProfile"
+            app:layout_constraintTop_toBottomOf="@+id/UserName"
+            app:layout_constraintWidth_percent="0.55" />
+
+        <TextView
+            android:id="@+id/txtPoint"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/_40sdp"
+            android:layout_marginEnd="@dimen/_24sdp"
+            android:text="@string/point"
+            app:layout_constraintBottom_toBottomOf="@+id/UserName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.25"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/UserName"
+            app:layout_constraintTop_toTopOf="@+id/UserName"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintWidth_percent="0.12" />
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/_32sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:text="@string/_825"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/txtEmail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.37"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/txtEmail"
+            app:layout_constraintTop_toTopOf="@+id/txtEmail"
+            app:layout_constraintVertical_bias="1"
+            app:layout_constraintWidth_percent="0.15" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/imageFilterView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/casteliacity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintWidth_percent="1.0" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.6"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageFilterView2"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent="0.97"
+        android:background="@color/white">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintFlight"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/constraintCarRent"
+            app:layout_constraintEnd_toStartOf="@+id/constraintDestination"
+            app:layout_constraintHeight_percent="0.2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.27"
+            >
+
+
+            <TextView
+                android:id="@+id/txtFlightConstraint"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="@string/flights"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageFlight"
+                app:layout_constraintWidth_percent="1" />
+
+            <androidx.constraintlayout.utils.widget.ImageFilterButton
+                android:id="@+id/imageFlight"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="17dp"
+                android:contentDescription="@string/button_that_applies_an_image_filter"
+                app:layout_constraintBottom_toTopOf="@+id/txtFlightConstraint"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.67"
+                app:layout_constraintHorizontal_bias="0.454"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent="0.8"
+                android:src="@drawable/birdlogo"
+                android:clickable="true"
+                android:focusable="true"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintDestination"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/constraintFlight"
+            app:layout_constraintEnd_toStartOf="@+id/constraintHotels"
+            app:layout_constraintHeight_percent="0.2"
+            app:layout_constraintStart_toEndOf="@+id/constraintFlight"
+            app:layout_constraintTop_toTopOf="@+id/constraintFlight"
+            app:layout_constraintWidth_percent="0.27">
+
+
+
+
+            <TextView
+                android:id="@+id/txtDestination"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="@string/destination"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgDestination"
+                app:layout_constraintWidth_percent="1" />
+
+            <androidx.constraintlayout.utils.widget.ImageFilterButton
+                android:id="@+id/imgDestination"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintBottom_toTopOf="@+id/txtDestination"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.65"
+                app:layout_constraintHorizontal_bias="0.476"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent="0.8"
+                app:srcCompat="@android:drawable/btn_dialog"
+                android:contentDescription="@string/button_that_applies_an_image_filter"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintHotels"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/constraintDestination"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.2"
+            app:layout_constraintStart_toEndOf="@+id/constraintDestination"
+            app:layout_constraintTop_toTopOf="@+id/constraintDestination"
+            app:layout_constraintWidth_percent="0.27">
+
+
+            <TextView
+                android:id="@+id/txtHotels"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="@string/hotels"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgHotels"
+                app:layout_constraintWidth_percent="1" />
+
+            <androidx.constraintlayout.utils.widget.ImageFilterButton
+                android:id="@+id/imgHotels"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintBottom_toTopOf="@+id/txtHotels"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.65"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.8"
+                app:srcCompat="@android:drawable/alert_dark_frame"
+                android:contentDescription="@string/hotel_button_image"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintCarRent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintBottom_toTopOf="@+id/constraintInsurance"
+            app:layout_constraintEnd_toStartOf="@+id/constraintTrain"
+            app:layout_constraintHeight_percent="0.2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintFlight"
+            app:layout_constraintWidth_percent="0.27">
+
+
+            <TextView
+                android:id="@+id/txtCarRent"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="@string/car_rent"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgCarRent"
+                app:layout_constraintWidth_percent="1" />
+
+            <androidx.constraintlayout.utils.widget.ImageFilterButton
+                android:id="@+id/imgCarRent"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:contentDescription="@string/car_rent_image_button"
+                app:layout_constraintBottom_toTopOf="@+id/txtCarRent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.65"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.8"
+                app:srcCompat="@android:drawable/ic_dialog_dialer" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintTrain"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/constraintCarRent"
+            app:layout_constraintEnd_toStartOf="@+id/constraintCulinary"
+            app:layout_constraintHeight_percent="0.2"
+            app:layout_constraintStart_toEndOf="@+id/constraintCarRent"
+            app:layout_constraintTop_toTopOf="@+id/constraintCarRent"
+            app:layout_constraintWidth_percent="0.27">
+
+
+            <TextView
+                android:id="@+id/txtTrain"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="@string/train"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgTrain"
+                app:layout_constraintWidth_percent="1" />
+
+            <androidx.constraintlayout.utils.widget.ImageFilterButton
+                android:id="@+id/imgTrain"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:contentDescription="@string/train_image_button"
+                app:layout_constraintBottom_toTopOf="@+id/txtTrain"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.65"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.8"
+                app:srcCompat="@android:drawable/ic_lock_idle_charging" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintCulinary"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/constraintTrain"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.2"
+            app:layout_constraintStart_toEndOf="@+id/constraintTrain"
+            app:layout_constraintTop_toTopOf="@+id/constraintTrain"
+            app:layout_constraintWidth_percent="0.27">
+
+
+            <TextView
+                android:id="@+id/txtColinary"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="@string/culinary"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgCulinary"
+                app:layout_constraintWidth_percent="1" />
+
+            <androidx.constraintlayout.utils.widget.ImageFilterButton
+                android:id="@+id/imgCulinary"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:contentDescription="@string/image_button_culinary"
+                app:layout_constraintBottom_toTopOf="@+id/txtColinary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.65"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.8"
+                app:srcCompat="@android:drawable/ic_dialog_map" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintInsurance"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="67dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/constraintCoupons"
+            app:layout_constraintHeight_percent="0.2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintCarRent"
+            app:layout_constraintWidth_percent="0.27">
+
+
+            <TextView
+                android:id="@+id/txtInsurance"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="@string/insurance"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgInsurance"
+                app:layout_constraintWidth_percent="1" />
+
+            <androidx.constraintlayout.utils.widget.ImageFilterButton
+                android:id="@+id/imgInsurance"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:contentDescription="@string/insurance_image_button"
+                app:layout_constraintBottom_toTopOf="@+id/txtInsurance"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.65"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.8"
+                app:srcCompat="@android:drawable/ic_dialog_email" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintCoupons"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/constraintInsurance"
+            app:layout_constraintEnd_toStartOf="@+id/constraintEvents"
+            app:layout_constraintHeight_percent="0.2"
+            app:layout_constraintStart_toEndOf="@+id/constraintInsurance"
+            app:layout_constraintTop_toTopOf="@+id/constraintInsurance"
+            app:layout_constraintWidth_percent="0.27">
+
+
+            <TextView
+                android:id="@+id/txtCoupons"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="@string/coupons"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgCoupons"
+                app:layout_constraintWidth_percent="1" />
+
+            <androidx.constraintlayout.utils.widget.ImageFilterButton
+                android:id="@+id/imgCoupons"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:contentDescription="@string/coupons_image_button"
+                app:layout_constraintBottom_toTopOf="@+id/txtCoupons"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.65"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.8"
+                app:srcCompat="@android:drawable/ic_dialog_info" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintEvents"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/constraintCoupons"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.2"
+            app:layout_constraintStart_toEndOf="@+id/constraintCoupons"
+            app:layout_constraintTop_toTopOf="@+id/constraintCoupons"
+            app:layout_constraintWidth_percent="0.27">
+
+
+            <TextView
+                android:id="@+id/txtEvent"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="@string/events"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgEvent"
+                app:layout_constraintWidth_percent="1" />
+
+            <androidx.constraintlayout.utils.widget.ImageFilterButton
+                android:id="@+id/imgEvent"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:contentDescription="@string/event_button"
+                app:layout_constraintBottom_toTopOf="@+id/txtEvent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.65"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.8"
+                app:srcCompat="@android:drawable/ic_menu_compass" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
